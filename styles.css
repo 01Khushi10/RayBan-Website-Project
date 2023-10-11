@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -14,15 +15,20 @@ html, body{
     width: 100%;
 }
 .back{
-    position: absolute;
     height: 100vh;
     width: 100%;
+}
+.back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .top{
     top: 0;
     left: 0;
     position: absolute;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     height: 100vh;
     pointer-events: none;
@@ -94,11 +100,13 @@ main .heroRight{
     /* background-color: rgb(56, 212, 3); */
 }
 .elements{
+    position: relative;
     height: 9vw;
     /* background-color: chocolate; */
     overflow: hidden;
 }
 .elements h1{
+    position: absolute;
     text-transform: capitalize;
     font-size: 11vw;
     font-weight: 100;
@@ -132,7 +140,6 @@ main .heroRight .imageDiv{
 }
 main .heroRight p:nth-child(3){
     margin-bottom: 100px;
-
 }
 
 
